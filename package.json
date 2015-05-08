@@ -1,8 +1,12 @@
 {
   "name": "simple-list",
-  "description": "Simple List test application",
+  "description": "HTML5 Application Demo - Without using a full stack framework",
   "version": "1.0.0",
   "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidBeale/simple-list.git"
+  },
   "author": {
     "name": "David Beale",
     "url": "http://bealearts.co.uk/"
