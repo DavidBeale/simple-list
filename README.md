@@ -9,7 +9,7 @@ The Implementation is based on browserify, to give the structure inherent in nod
 
 The app is structured as a main view backed by a presentation model. The view uses custom components, which it wires together. 
 
-The view and components are extensions to HTMLElement, registered a Custom Elements.
+The view and components are extensions to HTMLElement, registered as Custom Elements.
 
 The presentation model extends Node's EventEmitter in order to allow the view to "bind" to it.
 
