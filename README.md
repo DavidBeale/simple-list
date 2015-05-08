@@ -1,4 +1,4 @@
-# small-list
+# small-list [![Build Status](https://travis-ci.org/DavidBeale/simple-list.svg?branch=master)](https://travis-ci.org/DavidBeale/simple-list)
 
 HTML5 Application Demo - Without using a full stack framework
 
