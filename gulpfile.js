@@ -11,6 +11,7 @@ var watchify = require('watchify');
 var _ = require('lodash');
 var source = require('vinyl-source-stream');
 var runSequence = require('run-sequence');
+var ghPages = require('gulp-gh-pages');
 
 
 // TODO: Split tasks into individual files
@@ -80,6 +81,12 @@ gulp.task('watch', function() {
 	watch(['app/**', 'test/**', 'gulpfile.js'], function() {
 		gulp.start('run-tests');
 	});
+});
+
+ 
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 

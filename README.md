@@ -2,7 +2,7 @@
 
 HTML5 Application Demo - Without using a full stack framework
 
-[View Demo](http://)
+[View Demo](http://davidbeale.github.io/simple-list/)
 
 ## Approach
 The Implementation is based on browserify, to give the structure inherit in node.js applications and make the libraries of npm available.
