@@ -1,0 +1,35 @@
+{
+  "name": "simple-list",
+  "description": "Simple List test application",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "author": {
+    "name": "David Beale",
+    "url": "http://bealearts.co.uk/"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "lodash": "^3.8.0"
+  },
+  "devDependencies": {
+    "browserify": "^10.1.1",
+    "chai": "^2.0.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.2",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-util": "^3.0.4",
+    "gulp-watch": "^4.2.4",
+    "jstify": "^0.9.0",
+    "run-sequence": "^1.1.0",
+    "sinon": "^1.12.2",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.1"
+  }
+}
