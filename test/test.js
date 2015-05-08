@@ -3,6 +3,10 @@
 /*jshint -W079 */
 var expect = require('chai').expect;
 
+// Setup Mock for Node
+global.localStorage = require('localStorage');
+
+
 var MainPM = require('../app/assets/js/models/MainPM');
 
 describe('MainPM', function() {
@@ -10,7 +14,9 @@ describe('MainPM', function() {
 	var pm;
 
 	before(function(){
+
 		pm = new MainPM();
+		pm.init();
 	});
 
 

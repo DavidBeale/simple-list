@@ -3,6 +3,7 @@
 
 var EventEmitter = require('events').EventEmitter;
 var util = require('util');
+var persistanceService = require('../services/persistanceService');
 
 var MainPM = function()
 {
@@ -30,13 +31,20 @@ Object.defineProperty(MainPM.prototype, 'items', {
 });
 
 
+MainPM.prototype.init = function init() {
+	this._items = persistanceService.readItems();
+};
+
+
 MainPM.prototype.addItem = function addItem(item) {
 	console.info('Adding: ', item);
 	
 	this._items.push(item);
+	persistanceService.saveItems(this._items);
 	
 	this.emit('itemsChange', this._items);
 };
+
 
 MainPM.prototype.removeItem = function addItem(item) {
 	console.info('Removing: ', item);
@@ -45,6 +53,7 @@ MainPM.prototype.removeItem = function addItem(item) {
 	if (index > -1) 
 	{
     	this._items.splice(index, 1);
+    	persistanceService.saveItems(this._items);
 	}
 	
 	this.emit('itemsChange', this._items);

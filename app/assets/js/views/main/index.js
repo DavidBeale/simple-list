@@ -14,6 +14,8 @@ var Main = Object.create(HTMLElement.prototype);
 Main.createdCallback = function() {
 	this._pm = new MainPM();
 	this._pm.on('itemsChange', onItemsChange.bind(this));
+
+	this._pm.init();
 };
 
 
