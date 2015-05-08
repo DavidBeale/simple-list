@@ -5,7 +5,7 @@
 /*jshint -W079 */
 var expect = require('chai').expect;
 
-// Setup for Node
+// Setup Mock for Node
 global.localStorage = require('localStorage');
 
 
