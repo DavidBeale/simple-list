@@ -7,7 +7,7 @@ HTML5 Application Demo - Without using a full stack framework
 ## Approach
 The Implementation is based on browserify, to give the structure inherent in node.js applications and make the libraries of npm available.
 
-The app is structured as a main view backed by a presentation model. The view uses custom components, which it wires together. 
+The app is structured as a main view backed by a presentation model. The view uses custom components, which it wires together.
 
 The view and components are extensions to HTMLElement, registered as Custom Elements.
 
@@ -22,6 +22,7 @@ The presentation model extends Node's EventEmitter in order to allow the view to
 - UI Tests using WebDriver
 - Take advantage of ES6 language features using a browserify transform
 - Use a logger
+- The Data Binding is based on the now deprecated Object.observe(), use another binding library
 
 
 ### IE
